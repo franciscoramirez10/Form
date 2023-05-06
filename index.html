@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <form class="form">
+        <h1 class="title">Sign Up to get more <br> Updates </h1>
+        <p class="message">Contact <br> Information </p>
+            <div class="flex">
+                <label for="full-name"> &nbsp Full name <span>*</span>
+                    <input required="" placeholder="Your full name" type="text" id="full-name" class="input" pattern="[a-zA-Z ]{2,50}">
+                </label>
+        
+                <label for="email"> &nbsp E-mail <span>*</span>
+                    <input required="" placeholder="Your e-mail" type="email" id="email" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </label>
+            </div>  
+            <div></div>
+            <div>      
+                <label for="phone"> &nbsp Phone number <span>*</span> <br/>
+                    <input required="" placeholder="(123) _ _ _ - _ _ _ _" type="text" id="phone" class="input" pattern="\d{6}[-]\d{4}">
+                </label> 
+            </div>
+        <br>
+        <p class="message">Delivery <br> Information </p>    
+        <div class="flex">
+            <!-- <label for="country"> &nbsp Country <span>*</span> <br/>
+                <input required="" placeholder="Your country" type="text" id="country" class="input">
+            </label> -->
+            <label for="country"> &nbsp Country <span>*</span> <br>
+                <input required="" placeholder="Your country" type="text" id="country" class="input" list="country-list">
+                <datalist id="country-list">
+                  <option value="United States">
+                  <option value="Canada">
+                  <option value="Mexico">
+                  <option value="United Kingdom">
+                  <option value="France">
+                  <option value="Germany">
+                </datalist>
+              </label>
+              
+        </div>
+        <div class="flex">
+            <!-- <label for="city"> &nbsp City <span>*</span> <br/>
+                <input required="" placeholder="Your city" type="text" id="city" class="input">
+            </label> -->
+            <label for="city"> &nbsp City <span>*</span> <br/>
+                <input required="" placeholder="Your city" type="text" id="city" class="input" list="cities">
+                <datalist id="cities">
+                    <option value="New York">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                    <option value="Houston">
+                    <option value="Phoenix">
+                </datalist>
+            </label>&nbsp&nbsp&nbsp
+            <label for="zip"> &nbsp Zip code <span>*</span><br/>
+                <input  placeholder="_ _ _ - _ _ _" type="text" id="zip" class="input" pattern="[0-9]{6}" required="">
+            </label>
+        </div>  
+        <br>
+        <p class="message">Preferences <br> Confirmation </p> 
+        
+        <div class="form-input_chechbox"><input type="checkbox" name="" id="news" class="checkbox"><label for="news"> &nbsp I want to receive news, advice and marketing offers from Nestle</label></div>
+        <div class="form-input_chechbox"><input type="checkbox" name="" id="newsletter" class="checkbox"><label for="newsletter"> &nbsp I want to receive a newsletter about price changes</label></div>
+        <div class="form-input_chechbox"><input type="checkbox" name="" id="data" class="checkbox"><label for="data"> &nbsp I allow to use my data to personalize content and marketing activities</label></div>
+       
+        <br><br>
+        <button class="submit">Create a profile</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,286 @@
+
+body {
+    font-size: small;
+    font-family: sans-serif;
+    background-color: #000000;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 460px;
+    max-height: 100%;
+    padding: 20px 200px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form div #full-name {
+    width: 200px;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form div #full-name:hover {
+    border-color: #ff4500;
+  }
+
+  .form div #full-name:focus {
+    border-color: #009dcf;
+  }
+
+  .form div #full-name:valid {
+    border-color: #fff ; 
+  }
+
+  /* .form div #full-name:invalid {
+    border-color: #ff0000;
+  } */
+  
+
+  .form div #email {
+    width: 189px; 
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form div #email:hover {
+    border-color: #ff4500;
+  }
+
+  .form div #email:focus {
+    border-color: #009dcf;
+  }
+
+  /* .form div #email:invalid {
+    border-color: #ff0000;
+  } */
+
+  .form div #email:valid {
+    border-color: #fff;
+  }
+
+ 
+  .form div #phone {
+    width: 200px; 
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form div #phone:hover {
+    border-color: #ff4500;
+  }
+
+  .form div #phone:focus {
+    border-color: #009dcf;
+  }
+
+  /* .form div #phone:invalid {
+    border-color: #ff0000;
+  } */
+
+  .form div #phone:valid {
+    border-color: #fff;
+  }
+
+  .form label #country {
+    width: 200px; 
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form label #country:hover {
+    border-color: #ff4500;
+  }
+
+  .form label #country:focus {
+    border-color: #009dcf;
+  }
+
+
+  .form label #country:valid {
+    border-color: #fff;
+  }
+
+  .form label #city {
+    width: 200px; 
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form label #city:hover {
+    border-color: #ff4500;
+  }
+
+  .form label #city:focus {
+    border-color: #009dcf;
+  }
+
+  .form label #city:valid {
+    border-color: #fff;
+  }
+
+
+
+  .form div #zip:out-of-range {
+    border-color: #ff0000;
+  }
+
+  .form label #zip {
+    width: 80px; 
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .form label #zip:hover {
+    border-color: #ff4500;
+  }
+
+  .form label #zip:focus {
+    border-color: #009dcf;
+  }
+
+  .form label #zip:valid {
+    border-color: #fff;
+  }
+
+  .form-input_chechbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+ 
+  .form input[type=checkbox] {
+    appearance: none;
+    background-color: none;
+    border: 1px solid #ff4500;
+    height: 15px;
+    width: 15px;
+  }
+
+  input[type="checkbox"]:checked {
+    background-image: url(./img/checked.png);
+    background-position: center;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  
+
+  .message, .signin {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+    color: #fff;
+    font-size: smaller;
+    
+  }
+  
+  .form label .input {
+    width: 90%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    background-color: #000000;
+    border-color: #fff;
+  }
+
+  .form label > span {
+    color: orangered;
+    
+  }
+
+
+  .form label .input span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: orangered;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+
+  .form input::after {
+    color: #fff;
+  }
+
+
+  
+  .submit {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: #ff4500;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    width: 220px;
+    justify-self: center;
+    font-family: sans-serif;
+
+  }
+
+  .submit:hover {
+    width: 230px;
+    height: 45px;
+  }
+
+  .form label input[type=checkbox]:checked {
+    background-color: #ff4500;
+  }
+  
+ 
+  
